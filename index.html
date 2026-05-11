@@ -1,142 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ankam Charan Teja | Resume</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --navy: #1a3a5c;
+      --muted: #555;
+      --rule:  #ccc;
+      --bg:    #fff;
+      --tag:   #eef2f7;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #f0ede8;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      color: #1a1714;
+      padding: 32px 16px;
+    }
+
+    .page {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--bg);
+      padding: 36px 44px 40px;
+      border: 1px solid #ddd;
+    }
+
+    /* HEADER */
+    .header { text-align: center; margin-bottom: 14px; }
+    .header h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      margin-bottom: 4px;
+    }
+    .header .sub {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .header .contacts {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .header .contacts a { color: var(--navy); text-decoration: none; }
+    .header .contacts a:hover { text-decoration: underline; }
+    .header .contacts span { margin: 0 6px; color: #bbb; }
+
+    hr.toprule { border: none; border-top: 1px solid var(--rule); margin: 12px 0; }
+
+    /* SECTION */
+    .section { margin-bottom: 14px; }
+    .section-title {
+      font-size: 9.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--navy);
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 10px;
+    }
+
+    /* PROFILE */
+    .profile p { font-size: 12.5px; color: var(--muted); line-height: 1.65; }
+
+    /* ENTRY */
+    .entry { margin-bottom: 10px; }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 2px;
+    }
+    .entry-header h3 { font-size: 13px; font-weight: 600; }
+    .entry-header .date { font-size: 11.5px; color: var(--muted); }
+    .entry .sub { font-size: 11.5px; color: var(--navy); font-weight: 500; margin-bottom: 4px; }
+    .entry ul {
+      padding-left: 16px;
+      margin-top: 3px;
+    }
+    .entry ul li {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 1px;
+    }
+
+    /* CTF BADGES */
+    .ctf-row {
+      display: flex;
+      gap: 8px;
+      margin-top: 6px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      background: var(--tag);
+      color: var(--navy);
+      font-size: 11.5px;
+      font-weight: 600;
+      padding: 3px 10px;
+    }
+
+    /* SKILLS TABLE */
+    .skills-table { width: 100%; border-collapse: collapse; }
+    .skills-table td {
+      font-size: 12.5px;
+      padding: 3px 0;
+      vertical-align: top;
+    }
+    .skills-table td:first-child {
+      font-weight: 600;
+      color: #1a1714;
+      width: 110px;
+      white-space: nowrap;
+    }
+    .skills-table td:last-child { color: var(--muted); }
+
+    /* COURSEWORK */
+    .coursework p { font-size: 12px; color: var(--muted); line-height: 1.7; }
+
+    /* EDUCATION */
+    .edu-entry { margin-bottom: 7px; }
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    .edu-header h3 { font-size: 13px; font-weight: 600; }
+    .edu-header .date { font-size: 11.5px; color: var(--muted); }
+    .edu-entry .sub { font-size: 11.5px; color: var(--navy); }
+    .edu-entry .cgpa { font-size: 11.5px; color: var(--muted); }
+
+    @media print {
+      body { background: white; padding: 0; }
+      .page { border: none; padding: 20px 28px; }
+    }
+  </style>
 </head>
 <body>
-  <main class="container">
+<div class="page">
 
-    <header class="header">
-      <h1>Ankam Charan Teja</h1>
-      <p class="subtitle">B.Tech CSE (Cyber Security) Undergraduate</p>
-      <p class="contact">
-        📧 ankamcharantejaa@gmail.com |
-        📞 9381455655 |
-        GitHub: <a href="https://github.com/charan12309" target="_blank">charan12309</a> |
-        Resume: <a href="https://charan12309.github.io/Resume/" target="_blank">Website</a> |
-        CTF: x_impale_x
-      </p>
-    </header>
+  <div class="header">
+    <h1>Ankam Charan Teja</h1>
+    <p class="sub">B.Tech CSE (Cyber Security) &middot; Amrita Vishwa Vidyapeetham</p>
+    <p class="contacts">
+      <a href="mailto:ankamcharantejaa@gmail.com">ankamcharantejaa@gmail.com</a>
+      <span>|</span>
+      9381455655
+      <span>|</span>
+      <a href="https://github.com/charan12309">github.com/charan12309</a>
+      <span>|</span>
+      <a href="https://charan12309.github.io/Resume/">charan12309.github.io/Resume</a>
+    </p>
+  </div>
 
-    <section>
-      <h2>Summary</h2>
-      <p>
-        Motivated and detail-oriented Computer Science and Engineering undergraduate specializing in
-        <strong>Cyber Security</strong>, with strong hands-on experience in web application security,
-        Capture The Flag (CTF) problem solving, Linux environments, and Python scripting.
-      </p>
-    </section>
+  <hr class="toprule"/>
 
-    <section>
-      <h2>Skills</h2>
+  <!-- PROFILE -->
+  <div class="section profile">
+    <div class="section-title">Profile</div>
+    <p>Second-year B.Tech Computer Science (Cyber Security) undergraduate at Amrita Vishwa Vidyapeetham with hands-on experience building predictive ML pipelines, automating analytical workflows in Python, and developing robust applications. Skilled at extracting actionable insight from data and translating it into documented, deployable solutions.</p>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <h3>ML-Based Network Intrusion Detection System</h3>
+        <span class="date">2025 – 2026</span>
+      </div>
+      <p class="sub">Predictive Analytics &middot; Python &middot; Scikit-learn &middot; NSL-KDD &middot; UNSW-NB15</p>
       <ul>
-        <li><strong>Programming & Web:</strong> Python, C, Java, JavaScript, HTML5, CSS3</li>
-        <li><strong>Web Application Security:</strong> SQL Injection, XSS, Command Injection,
-          File Inclusion (LFI/RFI), File Upload Vulnerabilities, Directory Traversal, Brute Force Attacks</li>
-        <li><strong>Tools & Platforms:</strong> Linux (Kali, Fedora, Ubuntu), Burp Suite,
-          Ghidra, Wireshark, Git & GitHub</li>
+        <li>Built an end-to-end ML pipeline on NSL-KDD and UNSW-NB15 datasets for multi-class network threat classification — directly analogous to equipment anomaly detection and health monitoring.</li>
+        <li>Implemented and benchmarked <strong>Random Forest, SVM, KNN, Naïve Bayes, and MLP</strong>; applied PCA and LDA for dimensionality reduction, improving model generalization.</li>
+        <li>Generated comparative performance visualizations (confusion matrices, ROC curves, feature importance plots) to communicate model decisions clearly.</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-  <h2>Projects</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>CyberStegoApp – Secure Android Application</h3>
+        <span class="date">2025</span>
+      </div>
+      <p class="sub">Java &middot; Kotlin &middot; Android Studio &middot; AES-256 Encryption</p>
+      <ul>
+        <li>Designed and deployed a production-grade Android application combining AES-256 encryption with image steganography; implemented shake-to-delete and access-logging security features.</li>
+        <li>Demonstrates structured OOP application development — strong foundation for C# / Windows tooling environments.</li>
+      </ul>
+    </div>
 
-  <div class="item">
-    <h3>CyberStegoApp – Secure Android Steganography Application</h3>
-    <p>
-      Designed and developed a secure Android application that hides encrypted text
-      inside images using image steganography techniques.
-      Implemented <strong>AES-256 encryption</strong> to encrypt sensitive messages
-      before embedding, ensuring confidentiality even if the carrier image is exposed.
-    </p>
-    <p>
-      Built using <strong>Java and Kotlin</strong> with Android Studio.
-      Implemented additional security features such as <strong>shake-to-delete</strong>
-      for instant data destruction and basic activity logging for secure access tracking.
-    </p>
-    <p>
-      GitHub:
-      <a href="https://github.com/charan12309/CyberStegoApp" target="_blank">
-        https://github.com/charan12309/CyberStegoApp
-      </a>
-    </p>
+    <div class="entry">
+      <div class="entry-header">
+        <h3>Security Automation &amp; Analysis Scripts</h3>
+        <span class="date">2025</span>
+      </div>
+      <p class="sub">Python &middot; Linux &middot; Process Automation</p>
+      <ul>
+        <li>Developed Python scripts to automate repetitive decoding, decryption, and file analysis tasks.</li>
+        <li>Built a multithreaded TCP port scanner with concurrent scanning, timeout handling, and structured output logging.</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="item">
-    <h3>Python TCP Port Scanner</h3>
-    <p>
-      Built a multithreaded TCP port scanner using Python sockets to identify open ports on a target host.
-      Implemented timeout handling and concurrent scanning to demonstrate networking fundamentals
-      and security reconnaissance.
-    </p>
-    <p>
-      GitHub:
-      <a href="https://github.com/charan12309/python-port-scanner" target="_blank">
-        https://github.com/charan12309/python-port-scanner
-      </a>
-    </p>
+  <!-- CTF -->
+  <div class="section">
+    <div class="section-title">Competitive Problem Solving (CTF)</div>
+    <p style="font-size:12.5px;color:var(--muted)">Regular Capture The Flag competitor with focus on analytical decomposition, structured debugging, and documenting solution approaches.</p>
+    <div class="ctf-row">
+      <span class="badge">Backdoor CTF — 96th / 602 teams</span>
+      <span class="badge">Lemon CTF — 12th place</span>
+    </div>
   </div>
 
-  <div class="item">
-    <h3>Security Automation & Analysis Scripts</h3>
-    <p>
-      Developed Python scripts for decoding, decryption, and file analysis.
-      Automated repetitive security tasks using Linux command-line tools
-      to improve efficiency during CTF-style problem solving.
-    </p>
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <table class="skills-table">
+      <tr>
+        <td>Languages</td>
+        <td>Python, C#, C++, JavaScript, Java &amp; Kotlin, C, HTML5/CSS3, SQL</td>
+      </tr>
+      <tr>
+        <td>ML &amp; Data</td>
+        <td>Scikit-learn, Pandas, NumPy, Matplotlib/Seaborn, Classification &amp; Clustering, PCA/LDA</td>
+      </tr>
+      <tr>
+        <td>Tools</td>
+        <td>Git &amp; GitHub, Linux (Kali, Fedora), Android Studio, Wireshark, Burp Suite</td>
+      </tr>
+    </table>
   </div>
 
-</section>
+  <!-- COURSEWORK -->
+  <div class="section coursework">
+    <div class="section-title">Relevant Coursework</div>
+    <p>Machine Learning for Cyber Security &middot; Probability &amp; Statistics &middot; Systems &amp; Database Security &middot; Data Structures &amp; Algorithms &middot; Computer Networks</p>
+  </div>
 
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
 
-    <section>
-      <h2>Capture The Flag (CTF) Experience</h2>
-      <p>
-        Active participant in competitive CTF events focusing on applied cybersecurity and systems thinking.
-        Solved challenges across cryptography, reverse engineering, web security, and forensics using Linux-based tools.
-      </p>
+    <div class="edu-entry">
+      <div class="edu-header">
+        <h3>B.Tech – CSE (Cyber Security)</h3>
+        <span class="date">2024 – 2027 (Expected)</span>
+      </div>
+      <p class="sub">Amrita Vishwa Vidyapeetham, Coimbatore</p>
+      <p class="cgpa">CGPA: 7.15 / 10.00</p>
+    </div>
 
-      <p>
-        Achieved <strong>top-15 team ranking</strong> 
-      </p>
+    <div class="edu-entry">
+      <div class="edu-header">
+        <h3>Class XII</h3>
+        <span class="date">2024 &middot; 82.8%</span>
+      </div>
+      <p class="sub">Sri Chaitanya Pratibha, Hyderabad</p>
+    </div>
 
-      <p>
-        Participated in <strong>Backdoor CTF</strong>, finishing
-        <strong>96th place out of 602 teams</strong>.
-      </p>
+    <div class="edu-entry">
+      <div class="edu-header">
+        <h3>Class X</h3>
+        <span class="date">2022 &middot; 93%</span>
+      </div>
+      <p class="sub">Excellencia Infinitum School, Hyderabad</p>
+    </div>
+  </div>
 
-      <p><strong>CTF Handle:</strong> x_impale_x</p>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <p>
-        <strong>B.Tech – Computer Science and Engineering (Cyber Security)</strong><br/>
-        Amrita Vishwa Vidyapeetham, Coimbatore<br/>
-        2024 – Present<br/>
-        CGPA: 7.15 / 10.00
-      </p>
-
-      <p>
-        <strong>Class XII (SSC)</strong><br/>
-        Sri Chaitanya Pratibha, Kukatpally, Hyderabad<br/>
-        2022 – 2024 | 82.8%
-      </p>
-
-      <p>
-        <strong>Class X (CBSE)</strong><br/>
-        Excellencia Infinitum School, Shamirpet, Hyderabad<br/>
-        2022 | 93%
-      </p>
-    </section>
-
-    <footer>
-      <p>© 2025 Ankam Charan Teja</p>
-    </footer>
-
-  </main>
+</div>
 </body>
 </html>
