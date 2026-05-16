@@ -1,280 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ankam Charan Teja | Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-  <style>
-    :root {
-      --navy: #1a3a5c;
-      --muted: #555;
-      --rule:  #ccc;
-      --bg:    #fff;
-      --tag:   #eef2f7;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ankam Charan Teja — CV</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=DM+Mono:wght@300;400;500&display=swap');
 
-    body {
-      background: #f0ede8;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 13px;
-      color: #1a1714;
-      padding: 32px 16px;
-    }
+  *{box-sizing:border-box;margin:0;padding:0}
 
-    .page {
-      max-width: 780px;
-      margin: 0 auto;
-      background: var(--bg);
-      padding: 36px 44px 40px;
-      border: 1px solid #ddd;
-    }
+  body{
+    font-family:'DM Mono',monospace;
+    background:#f5f4f0;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
+    padding:2rem 1rem;
+    color:#1a1a1a;
+  }
 
-    /* HEADER */
-    .header { text-align: center; margin-bottom: 14px; }
-    .header h1 {
-      font-family: 'EB Garamond', serif;
-      font-size: 28px;
-      font-weight: 600;
-      letter-spacing: 0.01em;
-      margin-bottom: 4px;
-    }
-    .header .sub {
-      font-size: 12px;
-      color: var(--muted);
-      margin-bottom: 6px;
-    }
-    .header .contacts {
-      font-size: 12px;
-      color: var(--muted);
-    }
-    .header .contacts a { color: var(--navy); text-decoration: none; }
-    .header .contacts a:hover { text-decoration: underline; }
-    .header .contacts span { margin: 0 6px; color: #bbb; }
+  .page{
+    width:794px;
+    background:#fafaf7;
+    border:0.5px solid #d0cfc8;
+    padding:44px 52px;
+  }
 
-    hr.toprule { border: none; border-top: 1px solid var(--rule); margin: 12px 0; }
+  .header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    border-bottom:1.5px solid #1a1a1a;
+    padding-bottom:10px;
+    margin-bottom:14px;
+  }
+  .header-left h1{
+    font-family:'EB Garamond',serif;
+    font-size:28px;
+    font-weight:500;
+    letter-spacing:0.01em;
+    color:#1a1a1a;
+    line-height:1.1;
+  }
+  .header-left .subtitle{
+    font-size:10px;
+    color:#666;
+    margin-top:4px;
+    letter-spacing:0.04em;
+  }
+  .header-right{
+    text-align:right;
+    font-size:10px;
+    color:#555;
+    line-height:1.9;
+  }
+  .header-right a{color:#1a5fa5;text-decoration:none}
 
-    /* SECTION */
-    .section { margin-bottom: 14px; }
-    .section-title {
-      font-size: 9.5px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--navy);
-      padding-bottom: 4px;
-      border-bottom: 1px solid var(--rule);
-      margin-bottom: 10px;
-    }
+  .sec{margin-bottom:13px}
+  .sec-title{
+    font-size:9px;
+    font-weight:500;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:#888;
+    border-bottom:0.5px solid #d0cfc8;
+    padding-bottom:3px;
+    margin-bottom:8px;
+  }
 
-    /* PROFILE */
-    .profile p { font-size: 12.5px; color: var(--muted); line-height: 1.65; }
+  .profile{font-size:11px;line-height:1.7;color:#2a2a2a}
 
-    /* ENTRY */
-    .entry { margin-bottom: 10px; }
-    .entry-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
-      gap: 2px;
-    }
-    .entry-header h3 { font-size: 13px; font-weight: 600; }
-    .entry-header .date { font-size: 11.5px; color: var(--muted); }
-    .entry .sub { font-size: 11.5px; color: var(--navy); font-weight: 500; margin-bottom: 4px; }
-    .entry ul {
-      padding-left: 16px;
-      margin-top: 3px;
-    }
-    .entry ul li {
-      font-size: 12.5px;
-      color: var(--muted);
-      line-height: 1.6;
-      margin-bottom: 1px;
-    }
+  .cert-header{display:flex;justify-content:space-between;align-items:baseline}
+  .cert-name{font-size:12px;font-weight:500;color:#1a1a1a}
+  .cert-date{font-size:10px;color:#888}
+  .cert-sub{font-size:10.5px;color:#555;margin-top:2px;font-style:italic}
+  .cert-detail{font-size:10.5px;color:#333;margin-top:3px;line-height:1.5;padding-left:1rem}
 
-    /* CTF BADGES */
-    .ctf-row {
-      display: flex;
-      gap: 8px;
-      margin-top: 6px;
-      flex-wrap: wrap;
-    }
-    .badge {
-      background: var(--tag);
-      color: var(--navy);
-      font-size: 11.5px;
-      font-weight: 600;
-      padding: 3px 10px;
-    }
+  .proj{margin-bottom:10px}
+  .proj:last-child{margin-bottom:0}
+  .proj-header{display:flex;justify-content:space-between;align-items:baseline}
+  .proj-name{font-size:12px;font-weight:500;color:#1a1a1a}
+  .proj-date{font-size:10px;color:#888}
+  .proj-tech{font-size:10px;color:#777;margin-top:2px;font-style:italic}
+  .proj-tech a{color:#1a5fa5;text-decoration:none}
+  ul.bul{margin:3px 0 0 1rem;list-style:disc}
+  ul.bul li{font-size:10.5px;color:#2a2a2a;line-height:1.6;margin-bottom:1.5px}
 
-    /* SKILLS TABLE */
-    .skills-table { width: 100%; border-collapse: collapse; }
-    .skills-table td {
-      font-size: 12.5px;
-      padding: 3px 0;
-      vertical-align: top;
-    }
-    .skills-table td:first-child {
-      font-weight: 600;
-      color: #1a1714;
-      width: 110px;
-      white-space: nowrap;
-    }
-    .skills-table td:last-child { color: var(--muted); }
+  .writing{font-size:10.5px;color:#2a2a2a;line-height:1.7}
+  .writing a{color:#1a5fa5;text-decoration:none}
+  .ctf{font-size:10.5px;color:#2a2a2a;line-height:1.75}
 
-    /* COURSEWORK */
-    .coursework p { font-size: 12px; color: var(--muted); line-height: 1.7; }
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:0 36px}
+  .skill-grid{display:grid;grid-template-columns:auto 1fr;gap:3px 12px}
+  .sk-label{font-size:10px;font-weight:500;color:#555;white-space:nowrap;padding-top:1px}
+  .sk-val{font-size:10.5px;color:#2a2a2a;line-height:1.6}
 
-    /* EDUCATION */
-    .edu-entry { margin-bottom: 7px; }
-    .edu-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
-    }
-    .edu-header h3 { font-size: 13px; font-weight: 600; }
-    .edu-header .date { font-size: 11.5px; color: var(--muted); }
-    .edu-entry .sub { font-size: 11.5px; color: var(--navy); }
-    .edu-entry .cgpa { font-size: 11.5px; color: var(--muted); }
+  .edu-item{margin-bottom:8px}
+  .edu-item:last-child{margin-bottom:0}
+  .edu-row{display:flex;justify-content:space-between;align-items:baseline}
+  .edu-name{font-size:12px;font-weight:500;color:#1a1a1a}
+  .edu-date{font-size:10px;color:#888}
+  .edu-sub{font-size:10.5px;color:#555;margin-top:2px}
 
-    @media print {
-      body { background: white; padding: 0; }
-      .page { border: none; padding: 20px 28px; }
-    }
-  </style>
+  .hl{color:#0f6e56;font-weight:500}
+</style>
 </head>
 <body>
 <div class="page">
 
   <div class="header">
-    <h1>Ankam Charan Teja</h1>
-    <p class="sub">B.Tech CSE (Cyber Security) &middot; Amrita Vishwa Vidyapeetham</p>
-    <p class="contacts">
-      <a href="mailto:ankamcharantejaa@gmail.com">ankamcharantejaa@gmail.com</a>
-      <span>|</span>
-      9381455655
-      <span>|</span>
-      <a href="https://github.com/charan12309">github.com/charan12309</a>
-      <span>|</span>
-      <a href="https://charan12309.github.io/Resume/">charan12309.github.io/Resume</a>
-    </p>
+    <div class="header-left">
+      <h1>Ankam Charan Teja</h1>
+      <div class="subtitle">B.Tech CSE (Cyber Security) &nbsp;·&nbsp; Amrita Vishwa Vidyapeetham, Coimbatore</div>
+    </div>
+    <div class="header-right">
+      ankamcharantejaa@gmail.com &nbsp;|&nbsp; 9381455655<br>
+      <a href="https://github.com/charan12309">github.com/charan12309</a> &nbsp;|&nbsp;
+      <a href="https://charan12309.github.io/Resume">charan12309.github.io/Resume</a><br>
+      <a href="https://medium.com/@ankamcharantejaa">medium.com/@ankamcharantejaa</a> &nbsp;|&nbsp;
+      <a href="#">HTB Profile</a>
+    </div>
   </div>
 
-  <hr class="toprule"/>
-
-  <!-- PROFILE -->
-  <div class="section profile">
-    <div class="section-title">Profile</div>
-    <p>Second-year B.Tech Computer Science (Cyber Security) undergraduate at Amrita Vishwa Vidyapeetham with hands-on experience building predictive ML pipelines, automating analytical workflows in Python, and developing robust applications. Skilled at extracting actionable insight from data and translating it into documented, deployable solutions.</p>
+  <div class="sec">
+    <div class="sec-title">Profile</div>
+    <div class="profile">
+      Cybersecurity undergraduate specializing in offensive security and web application pentesting. Active CTF competitor — 96th place out of 602 teams in Backdoor CTF and 12th place in L3m0nCTF. Currently pursuing HTB CPTS (Penetration Tester path). Experienced in Python tooling, Android security, and ML-based network intrusion detection.
+    </div>
   </div>
 
-  <!-- PROJECTS -->
-  <div class="section">
-    <div class="section-title">Projects</div>
+  <div class="sec">
+    <div class="sec-title">Certifications &amp; Learning</div>
+    <div class="cert-header">
+      <span class="cert-name">HTB Certified Penetration Testing Specialist (CPTS)</span>
+      <span class="cert-date">2025 – Present</span>
+    </div>
+    <div class="cert-sub">HackTheBox Academy — Penetration Tester Job Role Path &nbsp;·&nbsp; <span class="hl">In Progress</span></div>
+    <div class="cert-detail">· Modules completed: Footprinting, Shells &amp; Payloads, File Transfers, Vulnerability Assessment, Web Attacks</div>
+  </div>
 
-    <div class="entry">
-      <div class="entry-header">
-        <h3>ML-Based Network Intrusion Detection System</h3>
-        <span class="date">2025 – 2026</span>
+  <div class="sec">
+    <div class="sec-title">Projects</div>
+
+    <div class="proj">
+      <div class="proj-header">
+        <span class="proj-name">ML-Based Network Intrusion Detection System</span>
+        <span class="proj-date">2025 – 2026</span>
       </div>
-      <p class="sub">Predictive Analytics &middot; Python &middot; Scikit-learn &middot; NSL-KDD &middot; UNSW-NB15</p>
-      <ul>
-        <li>Built an end-to-end ML pipeline on NSL-KDD and UNSW-NB15 datasets for multi-class network threat classification — directly analogous to equipment anomaly detection and health monitoring.</li>
-        <li>Implemented and benchmarked <strong>Random Forest, SVM, KNN, Naïve Bayes, and MLP</strong>; applied PCA and LDA for dimensionality reduction, improving model generalization.</li>
-        <li>Generated comparative performance visualizations (confusion matrices, ROC curves, feature importance plots) to communicate model decisions clearly.</li>
+      <div class="proj-tech">Python · Scikit-learn · NSL-KDD · UNSW-NB15 &nbsp;·&nbsp; <a href="https://github.com/charan12309">GitHub →</a></div>
+      <ul class="bul">
+        <li>Built an end-to-end ML pipeline on NSL-KDD and UNSW-NB15 datasets for multi-class network threat classification</li>
+        <li>Benchmarked Random Forest, SVM, KNN, Naive Bayes, and MLP; applied PCA and LDA for dimensionality reduction, improving model generalization</li>
+        <li>Generated confusion matrices, ROC curves, and feature importance plots to communicate model decisions clearly</li>
       </ul>
     </div>
 
-    <div class="entry">
-      <div class="entry-header">
-        <h3>CyberStegoApp – Secure Android Application</h3>
-        <span class="date">2025</span>
+    <div class="proj">
+      <div class="proj-header">
+        <span class="proj-name">CyberStegoApp — Secure Android Steganography Application</span>
+        <span class="proj-date">2025</span>
       </div>
-      <p class="sub">Java &middot; Kotlin &middot; Android Studio &middot; AES-256 Encryption</p>
-      <ul>
-        <li>Designed and deployed a production-grade Android application combining AES-256 encryption with image steganography; implemented shake-to-delete and access-logging security features.</li>
-        <li>Demonstrates structured OOP application development — strong foundation for C# / Windows tooling environments.</li>
+      <div class="proj-tech">Java · Kotlin · Android Studio · AES-256 &nbsp;·&nbsp; <a href="https://github.com/charan12309/CyberStegoApp">GitHub →</a></div>
+      <ul class="bul">
+        <li>Designed and developed an Android application to hide AES-256 encrypted text inside images using steganography</li>
+        <li>Implemented shake-to-delete for instant data destruction and access logging for secure activity tracking</li>
       </ul>
     </div>
 
-    <div class="entry">
-      <div class="entry-header">
-        <h3>Security Automation &amp; Analysis Scripts</h3>
-        <span class="date">2025</span>
+    <div class="proj">
+      <div class="proj-header">
+        <span class="proj-name">Python TCP Port Scanner</span>
+        <span class="proj-date">2025</span>
       </div>
-      <p class="sub">Python &middot; Linux &middot; Process Automation</p>
-      <ul>
-        <li>Developed Python scripts to automate repetitive decoding, decryption, and file analysis tasks.</li>
-        <li>Built a multithreaded TCP port scanner with concurrent scanning, timeout handling, and structured output logging.</li>
+      <div class="proj-tech">Python · Sockets · Threading &nbsp;·&nbsp; <a href="https://github.com/charan12309/python-port-scanner">GitHub →</a></div>
+      <ul class="bul">
+        <li>Multithreaded TCP port scanner with timeout handling and structured output; scans 1000 ports in under 3 seconds</li>
+        <li>Demonstrates socket programming and concurrent scanning fundamentals for security reconnaissance</li>
       </ul>
     </div>
+
   </div>
 
-  <!-- CTF -->
-  <div class="section">
-    <div class="section-title">Competitive Problem Solving (CTF)</div>
-    <p style="font-size:12.5px;color:var(--muted)">Regular Capture The Flag competitor with focus on analytical decomposition, structured debugging, and documenting solution approaches.</p>
-    <div class="ctf-row">
-      <span class="badge">Backdoor CTF — 96th / 602 teams</span>
-      <span class="badge">Lemon CTF — 12th place</span>
+  <div class="sec">
+    <div class="sec-title">Technical Writing</div>
+    <div class="writing">
+      Personal cybersecurity blog covering CTF challenge breakdowns, HTB machine walkthroughs, and penetration testing concepts. &nbsp;
+      <a href="https://medium.com/@ankamcharantejaa">Medium →</a> &nbsp;|&nbsp;
+      <a href="https://github.com/charan12309/Write-Up">GitHub →</a>
     </div>
   </div>
 
-  <!-- SKILLS -->
-  <div class="section">
-    <div class="section-title">Technical Skills</div>
-    <table class="skills-table">
-      <tr>
-        <td>Languages</td>
-        <td>Python, C#, C++, JavaScript, Java &amp; Kotlin, C, HTML5/CSS3, SQL</td>
-      </tr>
-      <tr>
-        <td>ML &amp; Data</td>
-        <td>Scikit-learn, Pandas, NumPy, Matplotlib/Seaborn, Classification &amp; Clustering, PCA/LDA</td>
-      </tr>
-      <tr>
-        <td>Tools</td>
-        <td>Git &amp; GitHub, Linux (Kali, Fedora), Android Studio, Wireshark, Burp Suite</td>
-      </tr>
-    </table>
+  <div class="sec">
+    <div class="sec-title">CTF Experience</div>
+    <div class="ctf">Active participant across web security, cryptography, reverse engineering, and forensics challenges.</div>
+    <div class="ctf"><strong>Backdoor CTF</strong> — 96th / 602 teams &nbsp;·&nbsp; <strong>L3m0nCTF</strong> — 12th place</div>
   </div>
 
-  <!-- COURSEWORK -->
-  <div class="section coursework">
-    <div class="section-title">Relevant Coursework</div>
-    <p>Machine Learning for Cyber Security &middot; Probability &amp; Statistics &middot; Systems &amp; Database Security &middot; Data Structures &amp; Algorithms &middot; Computer Networks</p>
-  </div>
-
-  <!-- EDUCATION -->
-  <div class="section">
-    <div class="section-title">Education</div>
-
-    <div class="edu-entry">
-      <div class="edu-header">
-        <h3>B.Tech – CSE (Cyber Security)</h3>
-        <span class="date">2024 – 2027 (Expected)</span>
+  <div class="two-col">
+    <div class="sec" style="margin-bottom:0">
+      <div class="sec-title">Technical Skills</div>
+      <div class="skill-grid">
+        <span class="sk-label">Languages</span>
+        <span class="sk-val">Python, C, Java, Kotlin, JavaScript, Bash</span>
+        <span class="sk-label">Security</span>
+        <span class="sk-val">Web App Pentesting, SQLi, XSS, Command Injection, LFI/RFI, Android Security, AES Encryption</span>
+        <span class="sk-label">Attacks</span>
+        <span class="sk-val">Brute Force, File Upload, Directory Traversal, IDOR, Privilege Escalation</span>
+        <span class="sk-label">Tools</span>
+        <span class="sk-val">Linux (Kali, Fedora), Burp Suite, Nmap, Metasploit, Wireshark, Ghidra, Hashcat, Git</span>
+        <span class="sk-label">ML &amp; Data</span>
+        <span class="sk-val">Scikit-learn, Pandas, NumPy, Matplotlib, Classification, Clustering, PCA, LDA</span>
       </div>
-      <p class="sub">Amrita Vishwa Vidyapeetham, Coimbatore</p>
-      <p class="cgpa">CGPA: 7.15 / 10.00</p>
     </div>
 
-    <div class="edu-entry">
-      <div class="edu-header">
-        <h3>Class XII</h3>
-        <span class="date">2024 &middot; 82.8%</span>
+    <div class="sec" style="margin-bottom:0">
+      <div class="sec-title">Education</div>
+      <div class="edu-item">
+        <div class="edu-row">
+          <span class="edu-name">B.Tech — CSE (Cyber Security)</span>
+          <span class="edu-date">2024 – 2028</span>
+        </div>
+        <div class="edu-sub">Amrita Vishwa Vidyapeetham, Coimbatore</div>
+        <div class="edu-sub">CGPA: <span class="hl">7.15 / 10.00</span></div>
       </div>
-      <p class="sub">Sri Chaitanya Pratibha, Hyderabad</p>
-    </div>
-
-    <div class="edu-entry">
-      <div class="edu-header">
-        <h3>Class X</h3>
-        <span class="date">2022 &middot; 93%</span>
+      <div class="edu-item">
+        <div class="edu-row">
+          <span class="edu-name">Class XII (SSC)</span>
+          <span class="edu-date">2024 · 82.8%</span>
+        </div>
+        <div class="edu-sub">Sri Chaitanya Pratibha, Hyderabad</div>
       </div>
-      <p class="sub">Excellencia Infinitum School, Hyderabad</p>
+      <div class="edu-item">
+        <div class="edu-row">
+          <span class="edu-name">Class X (CBSE)</span>
+          <span class="edu-date">2022 · 93%</span>
+        </div>
+        <div class="edu-sub">Excellencia Infinitum School, Hyderabad</div>
+      </div>
     </div>
   </div>
 
