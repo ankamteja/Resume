@@ -24,7 +24,7 @@
     width:794px;
     background:#fafaf7;
     border:0.5px solid #d0cfc8;
-    padding:44px 52px;
+    padding:36px 48px;
   }
 
   .header{
@@ -32,78 +32,94 @@
     justify-content:space-between;
     align-items:flex-end;
     border-bottom:1.5px solid #1a1a1a;
-    padding-bottom:10px;
-    margin-bottom:14px;
+    padding-bottom:9px;
+    margin-bottom:12px;
   }
   .header-left h1{
     font-family:'EB Garamond',serif;
-    font-size:28px;
+    font-size:26px;
     font-weight:500;
     letter-spacing:0.01em;
     color:#1a1a1a;
     line-height:1.1;
   }
   .header-left .subtitle{
-    font-size:10px;
+    font-size:9.5px;
     color:#666;
-    margin-top:4px;
+    margin-top:3px;
     letter-spacing:0.04em;
   }
   .header-right{
     text-align:right;
-    font-size:10px;
+    font-size:9.5px;
     color:#555;
-    line-height:1.9;
+    line-height:1.85;
   }
   .header-right a{color:#1a5fa5;text-decoration:none}
 
-  .sec{margin-bottom:13px}
+  .sec{margin-bottom:11px}
   .sec-title{
-    font-size:9px;
+    font-size:8.5px;
     font-weight:500;
     letter-spacing:0.14em;
     text-transform:uppercase;
     color:#888;
     border-bottom:0.5px solid #d0cfc8;
     padding-bottom:3px;
-    margin-bottom:8px;
+    margin-bottom:7px;
   }
 
-  .profile{font-size:11px;line-height:1.7;color:#2a2a2a}
+  .profile{font-size:10.5px;line-height:1.65;color:#2a2a2a}
 
   .cert-header{display:flex;justify-content:space-between;align-items:baseline}
-  .cert-name{font-size:12px;font-weight:500;color:#1a1a1a}
-  .cert-date{font-size:10px;color:#888}
-  .cert-sub{font-size:10.5px;color:#555;margin-top:2px;font-style:italic}
-  .cert-detail{font-size:10.5px;color:#333;margin-top:3px;line-height:1.5;padding-left:1rem}
+  .cert-name{font-size:11.5px;font-weight:500;color:#1a1a1a}
+  .cert-date{font-size:9.5px;color:#888}
+  .cert-sub{font-size:10px;color:#555;margin-top:2px;font-style:italic}
+  .cert-detail{font-size:10px;color:#333;margin-top:2px;line-height:1.5;padding-left:1rem}
 
-  .proj{margin-bottom:10px}
+  .proj{margin-bottom:9px}
   .proj:last-child{margin-bottom:0}
   .proj-header{display:flex;justify-content:space-between;align-items:baseline}
-  .proj-name{font-size:12px;font-weight:500;color:#1a1a1a}
-  .proj-date{font-size:10px;color:#888}
-  .proj-tech{font-size:10px;color:#777;margin-top:2px;font-style:italic}
+  .proj-name{font-size:11.5px;font-weight:500;color:#1a1a1a}
+  .proj-date{font-size:9.5px;color:#888}
+  .proj-tech{font-size:9.5px;color:#777;margin-top:1px;font-style:italic}
   .proj-tech a{color:#1a5fa5;text-decoration:none}
-  ul.bul{margin:3px 0 0 1rem;list-style:disc}
-  ul.bul li{font-size:10.5px;color:#2a2a2a;line-height:1.6;margin-bottom:1.5px}
+  ul.bul{margin:2px 0 0 1rem;list-style:disc}
+  ul.bul li{font-size:10px;color:#2a2a2a;line-height:1.55;margin-bottom:1px}
 
-  .writing{font-size:10.5px;color:#2a2a2a;line-height:1.7}
+  .writing{font-size:10px;color:#2a2a2a;line-height:1.65}
   .writing a{color:#1a5fa5;text-decoration:none}
-  .ctf{font-size:10.5px;color:#2a2a2a;line-height:1.75}
+  .ctf{font-size:10px;color:#2a2a2a;line-height:1.7}
 
   .two-col{display:grid;grid-template-columns:1fr 1fr;gap:0 36px}
-  .skill-grid{display:grid;grid-template-columns:auto 1fr;gap:3px 12px}
-  .sk-label{font-size:10px;font-weight:500;color:#555;white-space:nowrap;padding-top:1px}
-  .sk-val{font-size:10.5px;color:#2a2a2a;line-height:1.6}
+  .skill-grid{display:grid;grid-template-columns:auto 1fr;gap:2px 12px}
+  .sk-label{font-size:9.5px;font-weight:500;color:#555;white-space:nowrap;padding-top:1px}
+  .sk-val{font-size:10px;color:#2a2a2a;line-height:1.55}
 
-  .edu-item{margin-bottom:8px}
+  .edu-item{margin-bottom:7px}
   .edu-item:last-child{margin-bottom:0}
   .edu-row{display:flex;justify-content:space-between;align-items:baseline}
-  .edu-name{font-size:12px;font-weight:500;color:#1a1a1a}
-  .edu-date{font-size:10px;color:#888}
-  .edu-sub{font-size:10.5px;color:#555;margin-top:2px}
+  .edu-name{font-size:11.5px;font-weight:500;color:#1a1a1a}
+  .edu-date{font-size:9.5px;color:#888}
+  .edu-sub{font-size:10px;color:#555;margin-top:1px}
 
   .hl{color:#0f6e56;font-weight:500}
+
+  @media print{
+    @page{
+      size:A4;
+      margin:0;
+    }
+    body{
+      background:white;
+      padding:0;
+    }
+    .page{
+      width:100%;
+      border:none;
+      padding:28px 40px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -114,13 +130,13 @@
       <h1>Ankam Charan Teja</h1>
       <div class="subtitle">B.Tech CSE (Cyber Security) &nbsp;·&nbsp; Amrita Vishwa Vidyapeetham, Coimbatore</div>
     </div>
-<div class="header-right">
-  ankamcharantejaa@gmail.com &nbsp;|&nbsp; 9381455655<br>
-  <a href="https://github.com/charan12309">github.com/charan12309</a> &nbsp;|&nbsp;
-  <a href="https://charan12309.github.io/Resume">Resume</a><br>
-  <a href="https://medium.com/@ankamcharantejaa">medium.com/@ankamcharantejaa</a> &nbsp;|&nbsp;
-  <a href="#">HTB Profile</a>
-</div>
+    <div class="header-right">
+      ankamcharantejaa@gmail.com &nbsp;|&nbsp; 9381455655<br>
+      <a href="https://github.com/charan12309">github.com/charan12309</a> &nbsp;|&nbsp;
+      <a href="https://charan12309.github.io/Resume">Resume</a><br>
+      <a href="https://medium.com/@ankamcharantejaa">medium.com/@ankamcharantejaa</a> &nbsp;|&nbsp;
+    </div>
+  </div>
 
   <div class="sec">
     <div class="sec-title">Profile</div>
