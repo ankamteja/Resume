@@ -6,72 +6,17 @@
 <title>Ankam Charan Teja — CV</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=DM+Mono:wght@300;400;500&display=swap');
-
   *{box-sizing:border-box;margin:0;padding:0}
-
-  body{
-    font-family:'DM Mono',monospace;
-    background:#f5f4f0;
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    min-height:100vh;
-    padding:2rem 1rem;
-    color:#1a1a1a;
-  }
-
-  .page{
-    width:794px;
-    background:#fafaf7;
-    border:0.5px solid #d0cfc8;
-    padding:36px 48px;
-  }
-
-  .header{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-end;
-    border-bottom:1.5px solid #1a1a1a;
-    padding-bottom:9px;
-    margin-bottom:12px;
-  }
-  .header-left h1{
-    font-family:'EB Garamond',serif;
-    font-size:26px;
-    font-weight:500;
-    letter-spacing:0.01em;
-    color:#1a1a1a;
-    line-height:1.1;
-  }
-  .header-left .subtitle{
-    font-size:9.5px;
-    color:#666;
-    margin-top:3px;
-    letter-spacing:0.04em;
-  }
-  .header-right{
-    text-align:right;
-    font-size:9.5px;
-    color:#555;
-    line-height:1.85;
-    white-space:nowrap;
-  }
+  body{font-family:'DM Mono',monospace;background:#f5f4f0;display:flex;justify-content:center;align-items:flex-start;min-height:100vh;padding:2rem 1rem;color:#1a1a1a;}
+  .page{width:794px;background:#fafaf7;border:0.5px solid #d0cfc8;padding:36px 48px;}
+  .header{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1.5px solid #1a1a1a;padding-bottom:9px;margin-bottom:12px;}
+  .header-left h1{font-family:'EB Garamond',serif;font-size:26px;font-weight:500;letter-spacing:0.01em;color:#1a1a1a;line-height:1.1;}
+  .header-left .subtitle{font-size:9.5px;color:#666;margin-top:3px;letter-spacing:0.04em;}
+  .header-right{text-align:right;font-size:9.5px;color:#555;line-height:1.85;white-space:nowrap;}
   .header-right a{color:#1a5fa5;text-decoration:none}
-
   .sec{margin-bottom:11px}
-  .sec-title{
-    font-size:8.5px;
-    font-weight:500;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    color:#888;
-    border-bottom:0.5px solid #d0cfc8;
-    padding-bottom:3px;
-    margin-bottom:7px;
-  }
-
+  .sec-title{font-size:8.5px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#888;border-bottom:0.5px solid #d0cfc8;padding-bottom:3px;margin-bottom:7px;}
   .profile{font-size:10.5px;line-height:1.65;color:#2a2a2a}
-
   .cert-block{margin-bottom:8px}
   .cert-block:last-child{margin-bottom:0}
   .cert-header{display:flex;justify-content:space-between;align-items:baseline}
@@ -79,7 +24,6 @@
   .cert-date{font-size:9.5px;color:#888}
   .cert-sub{font-size:10px;color:#555;margin-top:2px;font-style:italic}
   .cert-detail{font-size:10px;color:#333;margin-top:2px;line-height:1.5;padding-left:1rem}
-
   .proj{margin-bottom:9px}
   .proj:last-child{margin-bottom:0}
   .proj-header{display:flex;justify-content:space-between;align-items:baseline}
@@ -89,40 +33,21 @@
   .proj-tech a{color:#1a5fa5;text-decoration:none}
   ul.bul{margin:2px 0 0 1rem;list-style:disc}
   ul.bul li{font-size:10px;color:#2a2a2a;line-height:1.55;margin-bottom:1px}
-
   .writing{font-size:10px;color:#2a2a2a;line-height:1.65}
   .writing a{color:#1a5fa5;text-decoration:none}
   .ctf{font-size:10px;color:#2a2a2a;line-height:1.7}
-
   .two-col{display:grid;grid-template-columns:1fr 1fr;gap:0 36px}
   .skill-grid{display:grid;grid-template-columns:auto 1fr;gap:4px 12px}
   .sk-label{font-size:9.5px;font-weight:500;color:#555;white-space:nowrap;padding-top:1px}
   .sk-val{font-size:10px;color:#2a2a2a;line-height:1.55}
-
   .edu-item{margin-bottom:7px}
   .edu-item:last-child{margin-bottom:0}
   .edu-row{display:flex;justify-content:space-between;align-items:baseline}
   .edu-name{font-size:11.5px;font-weight:500;color:#1a1a1a}
   .edu-date{font-size:9.5px;color:#888}
   .edu-sub{font-size:10px;color:#555;margin-top:1px}
-
   .hl{color:#0f6e56;font-weight:500}
-
-  @media print{
-    @page{
-      size:A4;
-      margin:0;
-    }
-    body{
-      background:white;
-      padding:0;
-    }
-    .page{
-      width:100%;
-      border:none;
-      padding:28px 40px;
-    }
-  }
+  @media print{@page{size:A4;margin:0;}body{background:white;padding:0;}.page{width:100%;border:none;padding:28px 40px;}}
 </style>
 </head>
 <body>
@@ -135,10 +60,10 @@
     </div>
     <div class="header-right">
       ankamcharantejaa@gmail.com &nbsp;|&nbsp; 9381455655<br>
-      <a href="https://github.com/ankamteja" target="_blank" rel="noopener noreferrer">github.com/ankamteja</a> &nbsp;|&nbsp;
-      <a href="https://ankamteja.github.io/Resume" target="_blank" rel="noopener noreferrer">Resume</a><br>
-      <a href="https://medium.com/@ankamcharantejaa" target="_blank" rel="noopener noreferrer">medium.com/@ankamcharantejaa</a> &nbsp;|&nbsp;
-      <a href="https://capcap-1.gitbook.io/capcap" target="_blank" rel="noopener noreferrer">capcap-1.gitbook.io/capcap</a>
+      <a href="https://github.com/ankamteja" target="_blank">github.com/ankamteja</a> &nbsp;|&nbsp;
+      <a href="https://ankamteja.github.io/Resume" target="_blank">Resume</a><br>
+      <a href="https://medium.com/@ankamcharantejaa" target="_blank">medium.com/@ankamcharantejaa</a> &nbsp;|&nbsp;
+      <a href="https://capcap-1.gitbook.io/capcap" target="_blank">capcap-1.gitbook.io/capcap</a>
     </div>
   </div>
 
@@ -158,7 +83,7 @@
         <span class="cert-date">2025 – Present</span>
       </div>
       <div class="cert-sub">HackTheBox Academy — Penetration Tester Job Role Path &nbsp;·&nbsp; <span class="hl">In Progress</span></div>
-      <div class="cert-detail">Completed 9+ modules covering active exploitation, post-exploitation, and network enumeration</div>
+      <div class="cert-detail">· Completed 9+ modules covering active exploitation, post-exploitation, and network enumeration</div>
     </div>
 
     <div class="cert-block">
@@ -167,9 +92,18 @@
         <span class="cert-date">June 2026</span>
       </div>
       <div class="cert-sub">Forage &nbsp;·&nbsp; <span class="hl">Completed</span></div>
-      <div class="cert-detail">· Completed a job simulation as an analyst on Mastercard's Security Awareness Team</div>
-      <div class="cert-detail">· Designed a phishing email simulation to identify and report security threats</div>
-      <div class="cert-detail">· Analyzed campaign data across 8 departments to identify high-risk teams and delivered targeted security awareness training</div>
+      <div class="cert-detail">· Designed a phishing simulation and analyzed campaign data across 8 departments to identify high-risk teams</div>
+      <div class="cert-detail">· Delivered targeted security awareness training materials for HR and Marketing based on simulation results</div>
+    </div>
+
+    <div class="cert-block">
+      <div class="cert-header">
+        <span class="cert-name">AIG Shields Up: Cybersecurity Virtual Experience</span>
+        <span class="cert-date">June 2026</span>
+      </div>
+      <div class="cert-sub">Forage &nbsp;·&nbsp; <span class="hl">Completed</span></div>
+      <div class="cert-detail">· Researched CVE-2021-44228 (Log4Shell) and drafted a vulnerability advisory identifying affected infrastructure across 4 internal teams</div>
+      <div class="cert-detail">· Wrote a Python bruteforce script to decrypt ransomware-encrypted files using a rockyou.txt wordlist attack</div>
     </div>
 
   </div>
@@ -182,7 +116,7 @@
         <span class="proj-name">ML-Based Network Intrusion Detection System</span>
         <span class="proj-date">2025 – 2026</span>
       </div>
-      <div class="proj-tech">Python · Scikit-learn · NSL-KDD · UNSW-NB15 &nbsp;·&nbsp; <a href="https://github.com/ankamteja/network-intrusion-detection" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
+      <div class="proj-tech">Python · Scikit-learn · NSL-KDD · UNSW-NB15 &nbsp;·&nbsp; <a href="https://github.com/ankamteja/network-intrusion-detection" target="_blank">GitHub →</a></div>
       <ul class="bul">
         <li>Built an end-to-end ML pipeline on NSL-KDD and UNSW-NB15 datasets for multi-class network threat classification</li>
         <li>Benchmarked Random Forest, SVM, KNN, Naive Bayes, and MLP; applied PCA and LDA for dimensionality reduction, improving model generalization</li>
@@ -195,7 +129,7 @@
         <span class="proj-name">CyberStegoApp — Secure Android Steganography Application</span>
         <span class="proj-date">2026</span>
       </div>
-      <div class="proj-tech">Java · Kotlin · Android Studio · AES-256 &nbsp;·&nbsp; <a href="https://github.com/ankamteja/CyberStegoApp" target="_blank" rel="noopener noreferrer">GitHub →</a></div>
+      <div class="proj-tech">Java · Kotlin · Android Studio · AES-256 &nbsp;·&nbsp; <a href="https://github.com/ankamteja/CyberStegoApp" target="_blank">GitHub →</a></div>
       <ul class="bul">
         <li>Designed and developed an Android application to hide AES-256 encrypted text inside images using steganography</li>
         <li>Implemented shake-to-delete for instant data destruction and access logging for secure activity tracking</li>
@@ -207,10 +141,10 @@
   <div class="sec">
     <div class="sec-title">Technical Writing</div>
     <div class="writing">
-      Personal cybersecurity blog covering CTF challenge breakdowns, HTB machine walkthroughs, and penetration testing concepts. Read my deep-dives on 
-      <a href="https://medium.com/@ankamcharantejaa" target="_blank" rel="noopener noreferrer">Medium →</a>
-      &nbsp;·&nbsp; Notes and writeups on 
-      <a href="https://capcap-1.gitbook.io/capcap" target="_blank" rel="noopener noreferrer">GitBook →</a>
+      Personal cybersecurity blog covering CTF challenge breakdowns, HTB machine walkthroughs, and penetration testing concepts. Read my deep-dives on
+      <a href="https://medium.com/@ankamcharantejaa" target="_blank">Medium →</a>
+      &nbsp;·&nbsp; Notes and writeups on
+      <a href="https://capcap-1.gitbook.io/capcap" target="_blank">GitBook →</a>
     </div>
   </div>
 
@@ -225,7 +159,7 @@
       <div class="sec-title">Technical Skills</div>
       <div class="skill-grid">
         <span class="sk-label">Languages</span>
-        <span class="sk-val">Python, C++, C, Java, Kotlin, Bash</span>
+        <span class="sk-val">Python, C++, Java, Kotlin, Bash</span>
         <span class="sk-label">Tools</span>
         <span class="sk-val">Linux (Kali, Fedora), Burp Suite, Nmap, Metasploit, Wireshark, Ghidra, Git</span>
         <span class="sk-label">ML &amp; Data</span>
